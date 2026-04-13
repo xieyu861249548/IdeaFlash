@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/overlayRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CC1A0A3B">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Pulsing Mic -->
+        <ImageView
+            android:id="@+id/ivMicPulse"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/ic_mic"
+            android:background="@drawable/bg_record_button"
+            android:padding="22dp"
+            android:scaleType="centerInside" />
+
+        <!-- Timer -->
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="#FFFFFFFF"
+            android:textSize="32sp"
+            android:fontFamily="monospace"
+            android:layout_marginTop="24dp" />
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在录音..."
+            android:textColor="#CCFFFFFF"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textColor="#FFFFFFFF"
+                android:background="@drawable/bg_btn_cancel"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="12dp" />
+
+            <Button
+                android:id="@+id/btnStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完成录音"
+                android:textColor="#FF1A0A3B"
+                android:background="@drawable/bg_btn_stop"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="12dp"
+                android:layout_marginStart="16dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "OPTIMIZED_PROCESSED_RES",
+    "kind": "Directory"
+  },
+  "applicationId": "com.lgjn.inspirationcapsule",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 19,
+      "versionName": "1.19",
+      "outputFile": "resources-release-optimize.ap_"
+    }
+  ],
+  "elementType": "File"
+}

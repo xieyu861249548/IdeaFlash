@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".LingGanApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LingGanJiaoNang"
+        android:hardwareAccelerated="true">
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Recycle Bin Activity -->
+        <activity
+            android:name=".RecycleBinActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.LingGanJiaoNang" />
+
+        <!-- Widget Recording Overlay Activity (legacy, kept for compatibility) -->
+        <activity
+            android:name=".RecordingOverlayActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Translucent"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true" />
+
+        <!-- Text Input Activity (opened by text-input widget buttons) -->
+        <activity
+            android:name=".TextInputActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Translucent"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Edit Title Activity -->
+        <activity
+            android:name=".EditTitleActivity"
+            android:exported="false"
+            android:theme="@style/Theme.LingGanJiaoNang"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Floating Window Service -->
+        <service
+            android:name=".service.FloatingWindowService"
+            android:exported="false"
+            android:permission="android.permission.SYSTEM_ALERT_WINDOW" />
+
+        <!-- Recording Service (legacy, kept for compatibility) -->
+        <service
+            android:name=".service.RecordingService"
+            android:exported="false"
+            android:foregroundServiceType="microphone" />
+
+        <!-- Widget Recording Service (new: handles recording + AI in background) -->
+        <service
+            android:name=".service.RecordingWidgetService"
+            android:exported="false"
+            android:foregroundServiceType="microphone" />
+
+        <!-- Recording Widget (2×2 mic button) -->
+        <receiver
+            android:name=".widget.RecordingWidget"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.lgjn.inspirationcapsule.WIDGET_START_CLICK" />
+                <action android:name="com.lgjn.inspirationcapsule.WIDGET_STOP_CLICK" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/recording_widget_info" />
+        </receiver>
+
+        <!-- 三击音量键无障碍服务 -->
+        <service
+            android:name=".service.VolumeKeyAccessibilityService"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+
+        <!-- Text Input Widget (2×3 with direct-save and AI-refine buttons) -->
+        <receiver
+            android:name=".widget.TextInputWidget"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/text_input_widget_info" />
+        </receiver>
+
+    </application>
+
+</manifest>

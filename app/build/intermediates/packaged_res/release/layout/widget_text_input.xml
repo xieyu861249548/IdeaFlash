@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    横向 3×2 文案输入小组件
+    左侧：模拟输入框（点击弹出输入对话框）
+    右侧：两个纯图标按钮（上=直接保存 / 下=AI提炼）
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_widget"
+    android:padding="10dp"
+    android:gravity="center_vertical">
+
+    <!-- 左侧：模拟文本输入区域（整块可点击） -->
+    <TextView
+        android:id="@+id/widgetInputArea"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_dialog_input"
+        android:text="点击输入灵感…"
+        android:textColor="#55FFFFFF"
+        android:textSize="12sp"
+        android:padding="10dp"
+        android:gravity="top|start"
+        android:lineSpacingMultiplier="1.4"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- 右侧：两个纯图标按钮（竖排） -->
+    <LinearLayout
+        android:layout_width="44dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- 直接保存（对勾图标） -->
+        <ImageView
+            android:id="@+id/widgetBtnSaveDirect"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_check"
+            android:background="@drawable/bg_dialog_btn_cancel"
+            android:padding="9dp"
+            android:scaleType="centerInside"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="直接保存" />
+
+        <!-- AI 提炼（四芒星图标） -->
+        <ImageView
+            android:id="@+id/widgetBtnAI"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/ic_sparkle"
+            android:background="@drawable/bg_dialog_btn_confirm"
+            android:padding="9dp"
+            android:scaleType="centerInside"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="AI提炼" />
+
+    </LinearLayout>
+
+</LinearLayout>

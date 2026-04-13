@@ -1,0 +1,24 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Pencil body outline -->
+    <path
+        android:pathData="M16,3 L21,8 L8,21 L3,21 L3,16 Z"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+    <!-- Pencil tip diagonal crease line -->
+    <path
+        android:pathData="M14,5 L19,10"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="1.4"
+        android:strokeLineCap="round" />
+
+</vector>

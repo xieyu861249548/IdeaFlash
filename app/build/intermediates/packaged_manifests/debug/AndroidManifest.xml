@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lgjn.inspirationcapsule"
+    android:versionCode="7"
+    android:versionName="1.07" >
+
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="34" />
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <permission
+        android:name="com.lgjn.inspirationcapsule.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.lgjn.inspirationcapsule.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <application
+        android:name="com.lgjn.inspirationcapsule.LingGanApp"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LingGanJiaoNang" >
+
+        <!-- Main Activity -->
+        <activity
+            android:name="com.lgjn.inspirationcapsule.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Recycle Bin Activity -->
+        <activity
+            android:name="com.lgjn.inspirationcapsule.RecycleBinActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.LingGanJiaoNang" />
+
+        <!-- Widget Recording Overlay Activity (legacy, kept for compatibility) -->
+        <activity
+            android:name="com.lgjn.inspirationcapsule.RecordingOverlayActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Translucent" />
+
+        <!-- Text Input Activity (opened by text-input widget buttons) -->
+        <activity
+            android:name="com.lgjn.inspirationcapsule.TextInputActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Translucent"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Edit Title Activity -->
+        <activity
+            android:name="com.lgjn.inspirationcapsule.EditTitleActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.LingGanJiaoNang"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Floating Window Service -->
+        <service
+            android:name="com.lgjn.inspirationcapsule.service.FloatingWindowService"
+            android:exported="false"
+            android:permission="android.permission.SYSTEM_ALERT_WINDOW" />
+
+        <!-- Recording Service (legacy, kept for compatibility) -->
+        <service
+            android:name="com.lgjn.inspirationcapsule.service.RecordingService"
+            android:exported="false"
+            android:foregroundServiceType="microphone" />
+
+        <!-- Widget Recording Service (new: handles recording + AI in background) -->
+        <service
+            android:name="com.lgjn.inspirationcapsule.service.RecordingWidgetService"
+            android:exported="false"
+            android:foregroundServiceType="microphone" />
+
+        <!-- Recording Widget (2×2 mic button) -->
+        <receiver
+            android:name="com.lgjn.inspirationcapsule.widget.RecordingWidget"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.lgjn.inspirationcapsule.WIDGET_START_CLICK" />
+                <action android:name="com.lgjn.inspirationcapsule.WIDGET_STOP_CLICK" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/recording_widget_info" />
+        </receiver>
+
+        <!-- 三击音量键无障碍服务 -->
+        <service
+            android:name="com.lgjn.inspirationcapsule.service.VolumeKeyAccessibilityService"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+
+        <!-- Text Input Widget (2×3 with direct-save and AI-refine buttons) -->
+        <receiver
+            android:name="com.lgjn.inspirationcapsule.widget.TextInputWidget"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/text_input_widget_info" />
+        </receiver>
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.lgjn.inspirationcapsule.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.DUMP" >
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

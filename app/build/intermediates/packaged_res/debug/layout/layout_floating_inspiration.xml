@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/floatRoot"
+    android:layout_width="220dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_floating_card"
+    android:elevation="16dp">
+
+    <!-- ===== 收起态：靠边小标签 ===== -->
+    <LinearLayout
+        android:id="@+id/collapsedBar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="10dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/floatPreview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#FFFFFFFF"
+            android:textSize="11sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="start" />
+
+        <TextView
+            android:id="@+id/btnExpand"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:text="▶"
+            android:textColor="#CCFFFFFF"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+    <!-- ===== 展开态：整块内容，按钮叠在右上角 ===== -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/expandedCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- 灵感正文，左对齐，撑满整卡 -->
+        <TextView
+            android:id="@+id/floatContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#EEFFFFFF"
+            android:textSize="13sp"
+            android:lineSpacingMultiplier="1.6"
+            android:maxLines="8"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:padding="14dp"
+            android:paddingEnd="60dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- 收起按钮，叠在右上角 -->
+        <TextView
+            android:id="@+id/btnCollapse"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:text="◀"
+            android:textColor="#CCFFFFFF"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/floatClose" />
+
+        <!-- 关闭按钮，叠在右上角 -->
+        <ImageView
+            android:id="@+id/floatClose"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_close"
+            android:background="@drawable/bg_close_btn"
+            android:padding="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="关闭"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

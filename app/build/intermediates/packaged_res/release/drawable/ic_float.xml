@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- 主窗口 outline（大圆角矩形） -->
+    <path
+        android:pathData="M3,5 L21,5 Q22,5 22,6 L22,18 Q22,19 21,19 L3,19 Q2,19 2,18 L2,6 Q2,5 3,5 Z"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#C9BAFF"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+    <!-- 浮动子窗口 filled（右下角小矩形，高亮色） -->
+    <path
+        android:pathData="M13,11 L19,11 Q19.5,11 19.5,11.5 L19.5,16.5 Q19.5,17 19,17 L13,17 Q12.5,17 12.5,16.5 L12.5,11.5 Q12.5,11 13,11 Z"
+        android:fillColor="#9B85F7"
+        android:strokeColor="#9B85F7"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+</vector>

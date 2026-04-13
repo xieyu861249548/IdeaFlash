@@ -1,0 +1,2 @@
+-keep class com.lgjn.inspirationcapsule.** { *; }
+-keepattributes *Annotation*

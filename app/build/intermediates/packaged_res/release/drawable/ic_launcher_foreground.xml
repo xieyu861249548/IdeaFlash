@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!--
+        线性风格 APP 图标：45° 封闭胶囊 + 中间闪电
+        白色描边，无填充，统一 strokeWidth=2.5
+    -->
+
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:rotation="-45">
+
+        <!-- 封闭胶囊外轮廓（圆角矩形，两端半圆） -->
+        <path
+            android:pathData="M54,24 C62.8,24 70,31.2 70,40 L70,68 C70,76.8 62.8,84 54,84 C45.2,84 38,76.8 38,68 L38,40 C38,31.2 45.2,24 54,24 Z"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="2.5"
+            android:fillColor="#00000000" />
+
+    </group>
+
+    <!-- 闪电符号（居中，不随胶囊旋转，保持正向可读） -->
+    <path
+        android:pathData="M57.5,38 L48.5,55 L53,55 L50.5,70 L59.5,51 L55,51 Z"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000" />
+
+</vector>

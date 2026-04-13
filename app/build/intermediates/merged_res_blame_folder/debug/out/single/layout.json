@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "com.lgjn.inspirationcapsule.app-mergeDebugResources-38:/layout/item_inspiration.xml",
+        "source": "com.lgjn.inspirationcapsule.app-main-41:/layout/item_inspiration.xml"
+    },
+    {
+        "merged": "com.lgjn.inspirationcapsule.app-mergeDebugResources-38:/layout/item_recycle_bin.xml",
+        "source": "com.lgjn.inspirationcapsule.app-main-41:/layout/item_recycle_bin.xml"
+    },
+    {
+        "merged": "com.lgjn.inspirationcapsule.app-mergeDebugResources-38:/layout/dialog_confirm.xml",
+        "source": "com.lgjn.inspirationcapsule.app-main-41:/layout/dialog_confirm.xml"
+    },
+    {
+        "merged": "com.lgjn.inspirationcapsule.app-mergeDebugResources-38:/layout/widget_text_input.xml",
+        "source": "com.lgjn.inspirationcapsule.app-main-41:/layout/widget_text_input.xml"
+    },
+    {
+        "merged": "com.lgjn.inspirationcapsule.app-mergeDebugResources-38:/layout/activity_recording_overlay.xml",
+        "source": "com.lgjn.inspirationcapsule.app-main-41:/layout/activity_recording_overlay.xml"
+    },
+    {
+        "merged": "com.lgjn.inspirationcapsule.app-mergeDebugResources-38:/layout/widget_recording.xml",
+        "source": "com.lgjn.inspirationcapsule.app-main-41:/layout/widget_recording.xml"
+    },
+    {
+        "merged": "com.lgjn.inspirationcapsule.app-mergeDebugResources-38:/layout/activity_main.xml",
+        "source": "com.lgjn.inspirationcapsule.app-main-41:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.lgjn.inspirationcapsule.app-mergeDebugResources-38:/layout/layout_floating_inspiration.xml",
+        "source": "com.lgjn.inspirationcapsule.app-main-41:/layout/layout_floating_inspiration.xml"
+    },
+    {
+        "merged": "com.lgjn.inspirationcapsule.app-mergeDebugResources-38:/layout/dialog_inspiration_edit.xml",
+        "source": "com.lgjn.inspirationcapsule.app-main-41:/layout/dialog_inspiration_edit.xml"
+    },
+    {
+        "merged": "com.lgjn.inspirationcapsule.app-mergeDebugResources-38:/layout/dialog_text_input.xml",
+        "source": "com.lgjn.inspirationcapsule.app-main-41:/layout/dialog_text_input.xml"
+    },
+    {
+        "merged": "com.lgjn.inspirationcapsule.app-mergeDebugResources-38:/layout/activity_recycle_bin.xml",
+        "source": "com.lgjn.inspirationcapsule.app-main-41:/layout/activity_recycle_bin.xml"
+    }
+]

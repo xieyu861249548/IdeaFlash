@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 深色底层：深紫蓝，高不透明度 -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#F0120848" />
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+    <!-- 对角高光：模拟玻璃顶部反光 -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="135"
+                android:startColor="#40FFFFFF"
+                android:centerColor="#10FFFFFF"
+                android:endColor="#00FFFFFF" />
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+    <!-- 白色切边边框 -->
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="1dp" android:color="#33FFFFFF" />
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+</layer-list>

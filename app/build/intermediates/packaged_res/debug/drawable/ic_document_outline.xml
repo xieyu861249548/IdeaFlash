@@ -1,0 +1,49 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Page outline with folded top-right corner -->
+    <path
+        android:pathData="M6,2 L14,2 L18,6 L18,22 L6,22 Z"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+    <!-- Folded corner crease -->
+    <path
+        android:pathData="M14,2 L14,6 L18,6"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="1.4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+    <!-- Text line 1 -->
+    <path
+        android:pathData="M9,10 L15,10"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round" />
+
+    <!-- Text line 2 -->
+    <path
+        android:pathData="M9,13 L15,13"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round" />
+
+    <!-- Text line 3 (shorter) -->
+    <path
+        android:pathData="M9,16 L13,16"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round" />
+
+</vector>

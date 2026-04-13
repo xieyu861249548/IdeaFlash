@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog"
+    android:padding="24dp">
+
+    <!-- 标题 -->
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="手动记录灵感"
+        android:textColor="#FFFFFFFF"
+        android:textSize="17sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="6dp" />
+
+    <!-- 副标题说明 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="直接保存 或 交给AI提炼成15字以内文案"
+        android:textColor="#99FFFFFF"
+        android:textSize="11sp"
+        android:layout_marginBottom="14dp" />
+
+    <!-- 输入框 -->
+    <EditText
+        android:id="@+id/dialogEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="4"
+        android:maxLines="10"
+        android:background="@drawable/bg_dialog_input"
+        android:textColor="#FFFFFFFF"
+        android:textColorHint="#66FFFFFF"
+        android:hint="在这里写下你的想法…"
+        android:padding="12dp"
+        android:gravity="top|start"
+        android:textSize="14sp"
+        android:lineSpacingMultiplier="1.5"
+        android:inputType="textMultiLine" />
+
+    <!-- 按钮行：取消 + 直接保存 + AI提炼 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <!-- 取消 -->
+        <TextView
+            android:id="@+id/dialogBtnCancel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="取消"
+            android:textColor="#CCFFFFFF"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:background="@drawable/bg_dialog_btn_cancel"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- 直接保存 -->
+        <TextView
+            android:id="@+id/dialogBtnSaveDirect"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1.2"
+            android:text="直接保存"
+            android:textColor="#FFFFFFFF"
+            android:textSize="13sp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:background="@drawable/bg_dialog_btn_cancel"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginStart="8dp" />
+
+        <!-- AI 提炼 -->
+        <TextView
+            android:id="@+id/dialogBtnAI"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1.2"
+            android:text="✨ AI提炼"
+            android:textColor="#FFFFFFFF"
+            android:textSize="13sp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:background="@drawable/bg_dialog_btn_confirm"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.LingGanJiaoNang" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_accent</item>
+        <item name="colorPrimaryVariant">@color/purple_deep</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/purple_mid</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:windowBackground">@color/purple_dark</item>
+        <item name="android:statusBarColor">#2D1B6B</item>
+        <item name="android:navigationBarColor">#0D1B3E</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="TransparentBottomSheet" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="bottomSheetStyle">@style/TransparentBottomSheetStyle</item>
+    </style>
+    <style name="TransparentBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.Translucent" parent="Theme.LingGanJiaoNang">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+</resources>

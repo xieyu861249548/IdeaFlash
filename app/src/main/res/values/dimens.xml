@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ViewPager2 carousel settings -->
+    <dimen name="page_margin">24dp</dimen>
+    <dimen name="pager_width">280dp</dimen>
+
+    <!-- Dot indicator sizes -->
+    <dimen name="dot_selected">10dp</dimen>
+    <dimen name="dot_normal">7dp</dimen>
+</resources>

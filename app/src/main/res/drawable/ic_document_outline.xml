@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- 文档主体 outline（带右上角折角） -->
+    <path
+        android:pathData="M6,2.5 L14,2.5 L18.5,7 L18.5,21 Q18.5,21.5 18,21.5 L6,21.5 Q5.5,21.5 5.5,21 L5.5,3 Q5.5,2.5 6,2.5 Z"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#C9BAFF"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+    <!-- 折角 -->
+    <path
+        android:pathData="M14,2.5 L14,7 L18.5,7"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#C9BAFF"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+    <!-- 内容线 1（全长） -->
+    <path
+        android:pathData="M8.5,12 L15.5,12"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#9B85F7"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round" />
+
+    <!-- 内容线 2（半长） -->
+    <path
+        android:pathData="M8.5,16 L13,16"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#9B85F7"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round" />
+
+</vector>

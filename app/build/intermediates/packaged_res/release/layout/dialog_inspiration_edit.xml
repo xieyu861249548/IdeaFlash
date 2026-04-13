@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog"
+    android:padding="24dp">
+
+    <!-- 标题 -->
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="编辑灵感"
+        android:textColor="#FFFFFFFF"
+        android:textSize="17sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 输入框 -->
+    <EditText
+        android:id="@+id/dialogEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="5"
+        android:maxLines="10"
+        android:background="@drawable/bg_dialog_input"
+        android:textColor="#FFFFFFFF"
+        android:textColorHint="#66FFFFFF"
+        android:padding="12dp"
+        android:gravity="top|start"
+        android:textSize="14sp"
+        android:lineSpacingMultiplier="1.5"
+        android:inputType="textMultiLine|textCapSentences" />
+
+    <!-- 按钮行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/dialogBtnCancel"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="取消"
+            android:textColor="#CCFFFFFF"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:background="@drawable/bg_dialog_btn_cancel"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/dialogBtnConfirm"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="保存"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:background="@drawable/bg_dialog_btn_confirm"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginStart="12dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

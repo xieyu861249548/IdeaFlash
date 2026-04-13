@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog"
+    android:paddingHorizontal="24dp"
+    android:paddingTop="28dp"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开启三击录音"
+        android:textColor="#FFFFFFFF"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/dialogMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开启后，在亮屏或锁屏状态下连续三击「音量上键」即可快速录音，无需解锁手机。\n\n① 点击「去开启」跳转无障碍设置\n② 找到「灵感胶囊」并开启\n\n⚠ 小米手机还需在「应用 → 灵感胶囊 → 电池」中选择「无限制」，并开启「自启动」，否则后台可能失效。\n\n注：本服务仅监听音量键按下事件，不读取屏幕内容，不上传任何数据。"
+        android:textColor="#CCFFFFFF"
+        android:textSize="14sp"
+        android:lineSpacingMultiplier="1.5"
+        android:layout_marginBottom="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/dialogBtnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="暂不"
+            android:textColor="#AAFFFFFF"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:paddingHorizontal="20dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/dialogBtnConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="去开启"
+            android:textColor="#FFFFFFFF"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:paddingHorizontal="20dp"
+            android:background="@drawable/bg_dialog_btn_confirm"
+            android:layout_marginStart="12dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+</LinearLayout>

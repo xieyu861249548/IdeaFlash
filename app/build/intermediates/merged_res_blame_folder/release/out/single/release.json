@@ -1,0 +1,358 @@
+[
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_record_button.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_record_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_pill_green_pressed.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_pill_green_pressed.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\layout_dialog_inspiration_edit.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\layout\\dialog_inspiration_edit.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_ic_launcher.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_dot_normal.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\dot_normal.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_ic_swipe_down.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\ic_swipe_down.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_ic_edit_outline.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\ic_edit_outline.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_btn_cancel.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_btn_cancel.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_ic_empty_capsule.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\ic_empty_capsule.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_btn_stop.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_btn_stop.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_pill_red_selector.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_pill_red_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_close_btn.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_close_btn.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_dialog_btn_cancel.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_dialog_btn_cancel.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_pill_green_selector.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_pill_green_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_ic_back.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\ic_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_bottom_sheet.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_bottom_sheet.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_ic_recycle_bin_nav.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\ic_recycle_bin_nav.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\layout_item_recycle_bin.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\layout\\item_recycle_bin.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_gradient.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_gradient.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\layout_dialog_accessibility_guide.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\layout\\dialog_accessibility_guide.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_circle_glass_pressed.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_circle_glass_pressed.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\layout_activity_recording_overlay.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\layout\\activity_recording_overlay.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_segment_selected.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_segment_selected.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_wave.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_wave.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_ic_checkmark.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\ic_checkmark.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\layout_bottom_sheet_transcript.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\layout\\bottom_sheet_transcript.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_ic_close.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\ic_close.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_pill_red.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_pill_red.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\xml_text_input_widget_info.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\xml\\text_input_widget_info.xml"
+    },
+    {
+        "merged": "com.lgjn.inspirationcapsule.app-merged_res-39:/layout_activity_main.xml.flat",
+        "source": "com.lgjn.inspirationcapsule.app-main-40:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_segmented_control.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_segmented_control.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_floating_card.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_floating_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\layout_layout_floating_inspiration.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\layout\\layout_floating_inspiration.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\layout_widget_recording.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\layout\\widget_recording.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_pill_glass_pressed.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_pill_glass_pressed.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_ic_document_outline.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\ic_document_outline.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_card_action_bar.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_card_action_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_ic_add_circle.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\ic_add_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_dialog.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\layout_dialog_text_input.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\layout\\dialog_text_input.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\layout_item_inspiration.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\layout\\item_inspiration.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_widget.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_widget.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_ic_check.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\ic_check.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_ic_delete.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\ic_delete.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_dialog_input.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_dialog_input.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_ic_float.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\ic_float.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_record_ring.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_record_ring.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_ic_swipe_up.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\ic_swipe_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_pill_red_pressed.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_pill_red_pressed.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_manual_btn.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_manual_btn.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\xml_accessibility_service_config.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\xml\\accessibility_service_config.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\layout_dialog_confirm.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\layout\\dialog_confirm.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_ic_mic.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\ic_mic.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\layout_widget_text_input.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\layout\\widget_text_input.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_action_btn.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_action_btn.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_dialog_btn_confirm.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_dialog_btn_confirm.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_pill_glass_selector.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_pill_glass_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_ic_stop.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\ic_stop.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_ic_sparkle.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\ic_sparkle.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\xml_recording_widget_info.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\xml\\recording_widget_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_bottom_action_bar.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_bottom_action_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_pill_glass.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_pill_glass.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_drag_handle.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_drag_handle.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_pill_green.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_pill_green.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_ic_menu.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\ic_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_circle_glass.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_circle_glass.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_ic_search.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\ic_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_dot_selected.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\dot_selected.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\layout_activity_recycle_bin.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\layout\\activity_recycle_bin.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_circle_glass_selector.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_circle_glass_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_circle_red.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_circle_red.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\layout_fragment_past_inspirations.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\layout\\fragment_past_inspirations.xml"
+    },
+    {
+        "merged": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-merged_res-39:\\drawable_bg_card_glass.xml.flat",
+        "source": "C:\\Users\\XYKing\\.gradle\\daemon\\8.2\\com.lgjn.inspirationcapsule.app-main-40:\\drawable\\bg_card_glass.xml"
+    }
+]

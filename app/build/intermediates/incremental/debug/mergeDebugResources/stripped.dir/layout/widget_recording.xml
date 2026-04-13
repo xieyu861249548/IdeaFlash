@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg_widget"
+    android:padding="8dp">
+
+    <!--
+        录音按钮区域：
+          - ProgressBar（不定圈）：录音中/生成中时可见，给用户视觉反馈
+          - ImageView：麦克风图标 / 停止图标
+    -->
+    <FrameLayout
+        android:layout_width="62dp"
+        android:layout_height="62dp">
+
+        <!-- 波动旋转圈（录音中 / AI生成中 均显示） -->
+        <ProgressBar
+            android:id="@+id/widgetRecordingRing"
+            style="@android:style/Widget.ProgressBar"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:indeterminateTint="#AAFFFFFF"
+            android:visibility="gone" />
+
+        <!-- 麦克风 / 停止 图标按钮 -->
+        <ImageView
+            android:id="@+id/widgetRecordBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_mic"
+            android:background="@drawable/bg_record_button"
+            android:padding="12dp"
+            android:scaleType="centerInside"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="录音" />
+
+    </FrameLayout>
+
+    <!-- 操作标签：「灵感胶囊」/ 「点击停止」 -->
+    <TextView
+        android:id="@+id/widgetLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="灵感胶囊"
+        android:textColor="#FFFFFFFF"
+        android:textSize="11sp"
+        android:layout_marginTop="4dp" />
+
+    <!--
+        状态标题行：
+          空闲有内容 → 「上一条灵感已录入」
+          AI生成中   → 「灵感正在生成中」
+          录音中     → ""（隐藏）
+    -->
+    <TextView
+        android:id="@+id/widgetStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#88FFFFFF"
+        android:textSize="9sp"
+        android:gravity="center"
+        android:layout_marginTop="3dp"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+    <!--
+        上一条灵感内容（仅空闲且有内容时显示）
+    -->
+    <TextView
+        android:id="@+id/widgetLastContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#66FFFFFF"
+        android:textSize="9sp"
+        android:gravity="center"
+        android:layout_marginTop="1dp"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+</LinearLayout>

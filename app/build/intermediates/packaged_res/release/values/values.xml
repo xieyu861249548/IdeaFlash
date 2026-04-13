@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="purple_accent">#7B3FEF</color>
+    <color name="purple_dark">#1A0A3B</color>
+    <color name="purple_deep">#2D1B6B</color>
+    <color name="purple_mid">#4A22AA</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_40">#66FFFFFF</color>
+    <color name="white_70">#B3FFFFFF</color>
+    <dimen name="dot_normal">7dp</dimen>
+    <dimen name="dot_selected">10dp</dimen>
+    <dimen name="page_margin">24dp</dimen>
+    <dimen name="pager_width">280dp</dimen>
+    <string name="accessibility_service_description">灵感胶囊通过无障碍服务监听音量键，实现三击快速录音。仅监听按键事件，不读取任何屏幕内容，不上传任何数据。</string>
+    <string name="app_name">灵感胶囊</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="edit_title">编辑标题</string>
+    <string name="empty_hint">按住下方按钮\n开始录制灵感</string>
+    <string name="float_hint">悬浮</string>
+    <string name="processing">AI正在生成文案…</string>
+    <string name="record_hint">按住录音</string>
+    <string name="recording">松开结束录音</string>
+    <string name="save">保存</string>
+    <string name="subtitle">记录每一刻灵感，让灵感永不消逝</string>
+    <style name="Theme.LingGanJiaoNang" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_accent</item>
+        <item name="colorPrimaryVariant">@color/purple_deep</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/purple_mid</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:windowBackground">@color/purple_dark</item>
+        <item name="android:statusBarColor">#2D1B6B</item>
+        <item name="android:navigationBarColor">#0D1B3E</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Theme.Translucent" parent="Theme.LingGanJiaoNang">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+    <style name="TransparentBottomSheet" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="bottomSheetStyle">@style/TransparentBottomSheetStyle</item>
+    </style>
+    <style name="TransparentBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>
