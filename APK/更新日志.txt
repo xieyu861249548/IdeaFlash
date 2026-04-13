@@ -1,0 +1,168 @@
+灵感胶囊 - 更新日志
+====================
+
+【1.19】2026-04-08
+- 优化：激活态三个按钮位置调整——双向约束 + verticalBias=0.78，靠近卡片底部，远离丢弃按钮
+- 新增：原文查看改为卡片翻转效果——点击「原文」按钮后卡片 3D 翻转（rotationY 90°→-90°→0°），正面显示灵感内容+日期，背面显示原文内容+「原文」标题；按钮文字同步切换为「灵感」，可反复翻转；退出激活态时自动恢复正面
+
+【1.18】2026-04-08
+- 修复：彻底修复关闭抽屉后卡片跳动——数据无变化时同时跳过 requestTransform 和 playCardPopIn（1.16 只跳过了 popIn 但 requestTransform 仍然会闪）
+- 优化：激活态三个功能按钮从圆形改为椭圆 pill 形状（玻璃材质 + 描边 + pressed 态），移到卡片下方丢弃按钮上方，不再覆盖卡片内容
+
+【1.17】2026-04-08
+- 优化：APP 图标重绘为线性描边风格——45° 封闭胶囊 + 中间闪电，白色 stroke 无填充，搭配紫色渐变背景
+- 优化：空状态页面图标改为与 APP 图标同款单色版（浅紫 #C9BAFF），替代原来的 ✨ emoji
+- 优化：底部操作栏去掉 🎤 和 ➕ 图标，只保留文字「点击录音」「手动记录」，更简洁
+- 优化：手动录入对话框「AI提炼」按钮去掉 ✨ emoji 前缀
+- 重做：以往灵感交互——取消 1.16 的长按拖动滑动手势，改为长按卡片后在该条下方展开「还原 / 删除」两个按钮，更直觉易发现；再次长按或点击卡片收起；滚动时自动收起
+
+【1.16】2026-04-07
+- 修复：关闭以往灵感抽屉后卡片跳动——observeViewModel 增加数据 ID 比对，内容无变化时跳过 playCardPopIn 动画
+- 修复：边缘滑动邻居卡片消失——PageTransformer 对 position>1.0 做 20% 阻尼衰减 + 禁用 RecyclerView overScrollMode
+- 优化：以往灵感列表去掉冗余状态标签（已完成/已丢弃 chip），已在对应 tab 下无需重复标注
+- 优化：以往灵感 RecyclerView 增加 paddingTop 修复首项裁切
+- 重做：以往灵感交互——去掉还原/删除按钮，改为长按卡片激活拖动（震动提示），上滑还原/下滑删除，同主页卡片一致的视觉反馈（阻尼跟手、缩放、旋转、临界点震动）
+- 重做：删除确认改为 Snackbar + 撤销按钮（3秒），替代弹窗确认，更流畅
+- 优化：激活态卡片放大（scale 0.78→0.94，translationY -40dp→-20dp）
+- 优化：激活态三按钮间距收窄（16dp→12dp），总宽不超过卡片边缘
+- 优化：激活态 actionsRow 双向约束 + verticalBias=0.3，上方靠近卡片，下方留更多空白
+
+【1.15】2026-04-06
+- 修复：激活态/滑动时卡片被截断——恢复根 ConstraintLayout 的 clipChildren="false" / clipToPadding="false"（1.14 误删），不影响 requestTransform 修复卡片乱序的逻辑
+- 修复：激活态状态栏颜色不一致——动态切换 window.statusBarColor（激活态 #1A0F2E 深紫，退出恢复 #2D1B6B 渐变顶色），onCreate 统一初始化
+- 修复：以往灵感列表项上下留白不均——item_recycle_bin.xml 的 bottomMetaRow 移除 constraintBottom_toBottomOf="parent"，避免 verticalBias 居中漂移；actionsColumn 改为约束到 content+metaRow 而非 parent，实现 paddingVertical=12dp 上下对称
+- 修复：首页与以往灵感菜单按钮位置不对齐——首页 btnMenu 加 layout_gravity=top；以往灵感 headerRow/searchBar paddingTop 48→36dp（与首页统一），按钮尺寸 32→36dp（与首页统一），同样加 layout_gravity=top + bg_action_btn 背景
+- 新增：激活态三个图标（浮窗/编辑/原文）iOS 风格 + 紫色主题——
+  * ic_float 重绘为 Picture-in-Picture 风格（主窗口 outline + 右下角 filled 子窗口）
+  * ic_edit_outline 重绘为铅笔 outline + 底部下划线（编辑语义）
+  * ic_document_outline 重绘为文档 outline + 折角 + 2 条内容线（原 3 条精简）
+  * 统一线宽 1.8，strokeLineCap/Join=round，viewport 24x24
+  * 主色改为 #C9BAFF（薰衣草紫，与产品渐变呼应），点缀色 #9B85F7
+  * 移除 ImageView 的 android:tint="#FFFFFFFF"，让 vector 自带颜色生效
+- 版本号：versionCode 15，versionName "1.15"
+
+【1.14】2026-04-05
+- 修复：退出 App 再进入后卡片位置错乱——observeViewModel 里 updateData 后强制调用 viewPager.requestTransform()，重新应用 PageTransformer 的 3D 变换；同时回滚 1.13 给根 ConstraintLayout 加的 clipChildren=false（保留 ViewPager 自身的）
+- 新增：完成/丢弃按钮材质升级——bg_pill_green/red 重写为 layer-list（顶部亮→底部暗渐变 + 1dp 白色高光描边），新增 _pressed 按下态（整体变暗 10%）和 _selector，activity_main.xml 加 elevation=6dp + stateListAnimator=@null 浮起感，letterSpacing=0.05 精致排版
+- 新增：三个圆形按钮（浮窗/编辑/原文）玻璃质感升级——bg_circle_glass 重写为 135° 玻璃渐变（#40FFFFFF→#18FFFFFF）+ 1dp 白色描边，新增 _pressed 按下态（更亮）和 _selector
+- 新增：按钮点击 bounce 动画——完成/丢弃/浮窗/编辑/原文 5 个按钮点击时缩放 1.0→0.9→1.0（80ms+120ms），iOS 风格反馈
+- 修复：激活态下滑动卡片没有临界反馈——移除 updateSwipeHints/hideSwipeHints 中的激活态提前 return，按钮常驻 alpha=1.0，只更新 scale 和文案（✓ 松手完成 / ✕ 松手丢弃）
+- 新增：卡片刷新后 pop-in 填充动画——observeViewModel 里 updateData 后对当前页播放 scale 0.92→1.0 的 OvershootInterpolator(1.2f) 弹性动画（280ms），补偿 notifyDataSetChanged 导致的生硬感
+- 优化：录音状态文案"再次点击停止录音"缩短为"停止录音"（7字→4字，布局更协调）
+- 版本号：versionCode 14，versionName "1.14"
+
+【1.13】2026-04-05
+- 优化：丢弃按钮样式与完成按钮统一——bg_pill_red.xml 重写为实底 #FF3B30 + 22dp 圆角（原透明底+边框），图标由 🗑 改为 ✕，激活态/滑动提示文案同步更新
+- 优化：卡片滑动被截断问题——activity_main.xml 根 ConstraintLayout 增加 clipChildren="false" / clipToPadding="false"，卡片超出 ViewPager 边界时不再被裁切
+- 优化：卡片滑动跟手感——translationY 系数由 0.4f 提升到 0.6f，滑动阈值由 height*0.25 降到 height*0.22，同时加入微缩放（1.0→0.92）+ 轻微旋转（±3°）增强动感
+- 新增：滑动触发临界点反馈——当滑动进度 ≥ 95% 时，按钮 pop 到 1.15x 并切换文案（"✓ 完成"→"✓ 松手完成"，"✕ 丢弃"→"✕ 松手丢弃"），跨越阈值瞬间触发一次触觉震动反馈（CONFIRM / API30+，低版本回退 LONG_PRESS）
+- 优化：springBack 回弹动画同步复位 scaleX/scaleY/rotation，flyOut 动画结束后重置所有变换防止 ViewHolder 复用异常
+- 版本号：versionCode 13，versionName "1.13"
+
+【1.12】2026-04-05
+- 优化：长按激活态只保留当前卡片——通过遍历 ViewPager 内部 RecyclerView，对非当前页 child 设置 alpha=0 淡出；退出激活态时恢复 alpha=1（MainActivity.kt fadeSiblingPages）
+- 新增：激活态背景毛玻璃效果——API 31+ 对 headerLayout / bottomSection 应用 RenderEffect.createBlurEffect(25f, 25f)；小米 HyperOS 设备 try-catch 回退到纯暗色蒙层
+- 优化：以往灵感抽屉从右侧滑出（原左侧）——activity_main.xml drawerContainer layout_gravity=end，MainActivity.kt / PastInspirationsFragment.kt 所有 Gravity.START 改为 Gravity.END，菜单按钮内外位置均在右上角，保持一致
+- 优化：禁用所有系统提示音（ToneGenerator 音色太刺耳）——setupViewPager 翻页音效、onCardSwiped 完成/丢弃音效、activatedCompleteBtn/activatedDiscardBtn 点击音效全部移除
+- 优化：以往灵感列表项布局重排——状态标签（已完成/已丢弃）不再独占一行，与日期同行显示在卡片底部，正文在顶部占两行（item_recycle_bin.xml 重写）
+- 优化：主页上下滑的完成/丢弃提示上移至屏幕顶/底——复用激活态的 activatedCompleteBtn/activatedDiscardBtn 作为滑动反馈，通过 onSwipeProgress 回调驱动 alpha+scale 动画，手势抬手后 150ms 淡出；item_inspiration.xml 内部 swipeUpHint/swipeDownHint 隐藏
+- 修复：item_inspiration.xml 隐藏 swipeUpHint 后 tvContent 约束错位——改为 app:layout_constraintTop_toTopOf="parent"
+- 版本号：versionCode 12，versionName "1.12"
+
+【1.11】2026-04-05
+- 优化：长按激活态现在支持竖向滑动——上滑标记完成、下滑标记丢弃，长按不再锁死手势（InspirationAdapter.kt 激活态分支重写）
+- 优化：激活态布局重排——卡片缩放至 78% 并上移 40dp，三个功能键（浮窗/编辑/原文）不再与卡片重叠
+- 优化：丢弃按钮由红色圆形 ImageView 改为药丸 TextView "🗑 丢弃"，与顶部"✓ 完成"同风格（120×44dp / bg_pill_red）
+- 优化：完成按钮上移（marginTop 80dp → 50dp），丢弃按钮（marginBottom 80dp → 50dp），激活态上下对称
+- 修复：状态栏颜色与渐变背景不一致——statusBarColor 由 #1A0A3B 改为 #2D1B6B（匹配 bg_gradient.xml 起始色），navigationBarColor 改为 #0D1B3E（匹配渐变结束色）
+- 新增：App Logo 全新设计——45° 倾斜胶囊（浅紫上盖微分离 + 深紫下半主体 + 高光细节）+ 下方散落的星尘粒子（大/中/小圆点 + 四角星），配色延续 iOS 风格
+- 版本号：versionCode 11，versionName "1.11"
+
+【1.10】2026-04-05
+- 修复：showAccessibilityGuideDialog 使用原生 AlertDialog——替换为自定义布局 dialog_accessibility_guide.xml，统一 iOS 风格
+- 修复：showApiErrorDialog 使用原生 AlertDialog——改用 dialog_confirm.xml 自定义弹窗，隐藏取消按钮，统一 iOS 风格
+- 修复：底部 BottomSheet 拖拽把手无圆角——新建 bg_drag_handle.xml（2dp 圆角），替换 bottom_sheet_transcript.xml 中硬编码背景色
+- 修改：以往灵感右上角图标由 ic_close 改为 ic_menu（三横线），与设计稿一致
+- 修复：长按激活态按钮被 ViewPager（Z=30f）遮挡——为 dimOverlay 设置 translationZ=25f，activatedCompleteBtn / activatedActionsRow / activatedDiscardBtn 设置 translationZ=40f，退出激活态时全部重置为 0f
+- 修复：关闭抽屉后主页列表不刷新——在 onDrawerClosed 回调中调用 viewModel.loadInspirations()
+- 版本号：versionCode 10，versionName "1.10"
+
+【1.09】2026-04-05
+- 修复：长按卡片时 dimOverlay 遮挡卡片——将 dimOverlay 移至 XML 中 ViewPager2 之前，使 ViewPager 自然绘制在蒙层上方；activateCard/deactivateCard 改为对 binding.viewPager 设置 translationZ=30f/0f
+- 修复：以往灵感分段控件"已完成"Tab 选中时文字不可见——选中色改为 #2D1F6E（深紫，在白色指示器上可读），未选中色改为 #CCFFFFFF；并在 setupSegmentedControl 初始化时立即调用 updateSegmentLabels()
+- 新增：查看原文弹窗改为 iOS 风格 BottomSheet——新建 bottom_sheet_transcript.xml（拖拽把手+标题+内容+关闭按钮），新增 bg_bottom_sheet.xml / bg_pill_glass.xml drawable，新增 TransparentBottomSheet 样式
+- 修复：以往灵感顶部 header 布局——搜索图标移至左侧，"以往灵感"标题居中（layout_weight=1，gravity=center），右侧新增关闭按钮（ic_close），点击关闭抽屉
+- 版本号：versionCode 9，versionName "1.09"
+
+【1.08】2026-04-05
+- 修复：搜索按钮图标由 ic_sparkle（AI四芒星）替换为 ic_search（放大镜），语义更准确
+- 修复：fragment_past_inspirations.xml 中 android:hintTextColor 属性名错误，修正为 android:textColorHint
+- 新增：ic_search.xml 搜索图标 drawable
+- 版本号：versionCode 8，versionName "1.08"
+
+【1.07】2026-04-04
+- 修复：长按卡片闪退（isUserInputEnabled=false 在 touch 序列中途直接调用导致 ViewPager2 内部状态异常，改为 post 到下一帧）
+- 修复：移除 RenderEffect 模糊（部分小米 HyperOS 实现有兼容问题，改为纯暗色蒙层）
+- 修复：切换页面时音效响两次（onItemClick 和 onPageSelected 均触发，删除 onItemClick 中重复调用）
+- 修复：App 启动时播放切换音效（onPageSelected 初始触发，加 isFirstPageSelection 标记跳过）
+- 修复：激活态按返回键直接退出 App（现在返回键优先退出激活态）
+- 修复：上下滑移除卡片时 notifyItemRangeRemoved 位置逻辑错误（改回 notifyDataSetChanged，ViewPager2 最稳定的刷新方式）
+- 优化：底部操作栏动画等 layout 完成后启动，避免 height=0 无动画
+- 版本号修正：build.gradle versionName 同步为 "1.07"，与 APK 文件名一致
+
+【1.06】2026-04-04
+- 修复：长按卡片闪退（GestureDetector 缺少 onDown→true，导致后续事件被忽略）
+- 修复：上下滑动无响应（OnTouchListener ACTION_DOWN 返回 false，MOVE 事件未送达）
+- 修复：切换页面/滑动时偶发 RuntimeException（ToneGenerator 未 release，资源耗尽）
+- 修复：回收桶切 Tab 后数据不刷新（Fragment scope 提前 cancel，改用 viewLifecycleOwner.lifecycleScope）
+- 调整：滑动判定灵敏度更低（阈值降至卡片高度 25%，方向判断比例放宽到 1.2:1）
+
+【1.05】2026-04-04
+- 新增：卡片手势交互重设计
+  · 向上滑 → 标记「已完成」，卡片飞出 + 叮声音效
+  · 向下滑 → 标记「已丢弃」，卡片落下 + 音效
+  · 左右切换 → 轻微点击音效
+  · 滑动过程中顶部/底部出现 ✓/🗑 提示图标，透明度跟随手势距离
+- 新增：长按卡片进入沉浸激活态
+  · 背景模糊（Android 12+）+ 深色蒙层，卡片浮于最顶层
+  · 底部弹出操作栏：编辑 / 浮窗 / 查看原文（3个按钮）
+  · 点击蒙层或操作完毕后退出激活态
+- 新增：回收桶功能
+  · 卡片进入已完成/已丢弃后，原有内容/时间/原文一律保留
+  · 主页只显示 status=active 的卡片
+  · 标题栏右上角新增回收桶图标，进入后分「已完成」/「已丢弃」两个 Tab
+  · 每条支持「还原」（回到主页）和「永久删除」（二次确认）
+- 新增：查看原文
+  · 语音录音：存储 Whisper 转写原文
+  · 手动输入：存储用户原始文字
+  · 长按激活后点击「查看原文」按钮查看
+- 新增：数据库升级 VERSION 1→2，增加 status / transcript 两列，老数据不丢失
+
+【1.04】2026-04-04
+- 同步小组件和三击音量键录音的 1 分钟兜底：在 RecordingWidgetService 加 Handler 超时，两种方式共享同一 Service 因此同时生效
+
+【1.03】2026-03-31
+- 修复：退出后重进，中间卡片空白（移除 cardContainer elevation，与 rotationY 渲染冲突）
+- 修复：滑到末尾卡片后，相邻卡片变成细线（rotationY 从 35° 降至 18°，cameraDistance 改为固定值）
+- 新增：录音最长时长限制为 1 分钟，超时自动停止并提示
+
+【1.02】2026-03-29
+- 副标题文案改为「记录每一刻灵感，让灵感永不消逝」
+- 卡片 Y 轴高度缩短约 30%
+- 底部录音/手动记录胶囊按钮 X 轴宽度缩短约 35%
+
+【1.01】2026-03-29
+- 卡片 UI 升级为 3D Coverflow 毛玻璃轮播效果（rotationY ±35°、透视缩放、Z 轴层级）
+- 卡片布局调整：「长按编辑」移至左上角，时间戳改为底部居中
+- 点击侧边卡片直接弹簧动画聚焦（click-to-focus）
+- 卡片背景增强：深紫蓝底 + 135° 对角高光渐变 + 1dp 白色描边
+
+【1.0】2026-03-29
+- 首个正式打包版本
+- 核心功能：语音录音 → AI 提炼灵感 → 卡片展示
+- 底部操作栏：录音与手动记录合并为横向胶囊（左：点击录音，右：手动记录）
+- 翻页圆点指示器移至底部区域（不再覆盖卡片）
+- 三击音量上键无障碍快捷录音（亮屏/锁屏均可）
+- 录音成功后实时刷新 MainActivity 列表（广播机制）
+- 震动反馈修复（Android 14 兼容，VibratorManager::class.java）
+- 保存成功后屏幕底部显示「灵感保存：…」悬浮提示
